@@ -1,0 +1,6 @@
+#!/bin/bash
+echo 'This will list the files in directory'
+read -p "Enter the folder name"folderName
+cd $folderName
+ls $folderName
+exit 0
