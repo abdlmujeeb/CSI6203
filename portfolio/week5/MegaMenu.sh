@@ -6,6 +6,7 @@
 # This script shows the functionality of USE CASE
 
 #Here user selects the options by entering the number
+while true; do 
 echo "Select Your Option"
 echo "  1)Create a folder"
 echo "  2)List files in the folder"
@@ -13,6 +14,7 @@ echo "  3)Copy a folder"
 echo "  4)Save a password" 
 echo "  5)Read the password" 
 echo "  6)Print newest file" 
+echo "  7)Exit"
 
 read n
 case $n in
@@ -58,8 +60,12 @@ case $n in
     fi
   ;;
   6) echo "You chose to print the newest file.";
-        echo "Not done yet"
+    find   ./ *.sh  -ctime  -1 
+    #This finds all bash files (*.sh) in current directory that are changed from one hour ago
+  ;;
+  7) exit 0
   ;;
   *) echo "invalid option";;
 esac
+done
 exit 0

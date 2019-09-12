@@ -58,7 +58,8 @@ case $n in
     fi
   ;;
   6) echo "You chose to print the newest file.";
-        echo "Not done yet"
+     find   ./ *.sh  -ctime  -1 
+    #This finds all bash files (*.sh) in current directory that are changed from one hour ago
   ;;
   *) echo "invalid option";;
 esac
