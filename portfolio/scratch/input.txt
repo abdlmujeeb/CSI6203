@@ -1,7 +1,0 @@
-small
-small big big big
-mall
-small big
-hellosmall
-small hellobig
-smallbig
