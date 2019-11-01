@@ -1,0 +1,14 @@
+    area=$(scale=2;(1/2) * $base * $height|bc)
+        Area of triangle with base: $base and height: $height is : $area
+    The download is completed! 
+    \033[31mERROR:\033[0m $1
+This is the start of the script
+Thank You!
+Thank You!
+    \033[31mERROR:\033[0m $1
+        RIGHT!
+        TOO LOW!
+        TOO HIGH!
+This is the very beginning of the script
+Thank You for playing the game!
+    \033[31mERROR:\033[0m  $Var1

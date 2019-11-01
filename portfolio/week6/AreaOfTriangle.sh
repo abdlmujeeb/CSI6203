@@ -13,8 +13,8 @@ get_area(){
 }
 
 #This will loop from 1 to 10 and find the area.
-for(( base=1; base<10; base++ )); do
-    for((height=1; height<10; height++ )); do
+for(( base=1; base<=10; base++ )); do
+    for((height=1; height<=10; height++ )); do
         area=$(get_area $base $height)
         echo "Area of triangle with base: $base and height: $height is :" $area
     done
